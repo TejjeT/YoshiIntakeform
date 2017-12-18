@@ -1,0 +1,38 @@
+{
+  "author": {
+    "name": "Tejeshwar Gurram",
+    "email": "tejeshwar.gurram@live.com"
+  },
+  "dependencies": {
+    "async": "^2.0.0-rc.1",
+    "atob": "^2.0.0",
+    "body-parser": "^1.15.0",
+    "btoa": "^1.1.2",
+    "chalk": "^1.1.1",
+    "compression": "^1.6.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.1",
+    "ejs": "^2.4.1",
+    "express": "3.4.4",
+    "express-domain-middleware": "^0.1.0",
+    "express-session": "^1.13.0",
+    "favicon": "0.0.2",
+    "jade": "*",
+    "jdbc": "^0.2.2",
+    "ldapjs": "^1.0.0",
+    "lodash": "^4.6.1",
+    "lodash-compat": "^3.10.2",
+    "moment": "^2.12.0",
+    "mongoose": "^4.4.6",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "request": "^2.69.0",
+    "serve-favicon": "^2.3.0",
+    "stylus": "^0.54.2"
+  },
+  "description": "FDM Web App",
+  "main": "app.js",
+  "name": "FDMPortal",
+  "version": "0.0.0"
+}

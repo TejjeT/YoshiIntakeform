@@ -1,0 +1,53 @@
+﻿doctype html
+html    
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title #{appName} 
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(href='http://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Lato', rel='stylesheet', type='text/css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    link(rel='stylesheet', type='text/css', href='/css/style.css')
+    link(rel='stylesheet', type='text/css', href='/css/form-elements.css')
+    script(src='/javascripts/modernizr-2.6.2.js')
+    script(src='https://code.angularjs.org/1.5.0-rc.2/angular.js')
+  
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/fdm/index') FDM Web Portal
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/fdm/IntakeForm') Intake Form
+            li
+              a(href='/fdm/contact') Contact
+            li.dropdown
+              a.dropdown-toggle( href="#", data-toggle="dropdown", role="button",aria-haspopup="true", aria-expanded="false" ) Processes 
+                span.caret
+                ul.dropdown-menu( role="menu" )
+                    li: a( href="#/fdm/processes" ) View processes
+                    li: a( href="/fdm/process/changeProcess" ) Request to Modify the request
+                    li: a( href="#" )
+                    
+                    li.divider
+                    li.dropdown-header Nav header
+                    li: a( href="#" ) Separated link
+                    li: a( href="#" ) One more separated link
+            li
+              a(href='/logout') Logout
+    .container.body-content
+      block content
+      hr
+
+    .container.panel-footer
+         h4  &copy; #{year} - Financial Data Management Team  
+
+     block scripts
