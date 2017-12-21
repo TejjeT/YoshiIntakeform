@@ -44,15 +44,15 @@ module.exports = function (passport) {
             // Due to replacing {{username}}, keep this inside the function
             // On Search, return eid, location, state, title, office name, zip code, name, and manager level from LDAP
             var opts = {
-                server: 'ldap://cof.ds.capitalone.com',
+                server: 'ldap://ldap.com',
                 filter: '(sAMAccountName={{username}})',
                 scope: 'sub',
                 attributes: [
                     'cn', 'l', 'st', 'title',
                     'physicalDeliveryOfficeName', 'postalCode', 'displayName', 'managerLevelDesc', 'mail'
                 ],
-                login: 'cof\\{{username}}',
-                searchBase: 'dc=cof,dc=ds,dc=capitalone,dc=com',
+                login: '\\{{username}}',
+                searchBase: 'dc=,dc=ds,dc=,dc=com',
                 username: username,
                 password: password
             };
