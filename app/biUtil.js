@@ -89,7 +89,7 @@ exports.generateStubToken = function() {
 
 	var userPart = {
 		id: 1,		// this is the ACCOUNT ID, not the USER ID !!!
-		username: 'admin@capitalone.com',
+		username: 'admin',
 		authorities: [{
 			id: 1,
 			authority: 'ROLE_ADMIN',
